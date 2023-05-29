@@ -1,0 +1,205 @@
+/* Define los colores en :root */
+:root {
+    --color-background: #fff;
+    --color-text: #333;
+    --color-primary: #222;
+    --color-accent: #fff;
+    --color-secondary: #ccc;
+    --color-link: #fff;
+}
+
+/* Estilos para la sección del header */
+
+.header-bg {
+    background-color: var(--color-primary);
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu ul li {
+    margin-left: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: var(--color-link);
+}
+
+/*main*/
+
+.product {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+
+
+}
+
+.imagen {
+    width: 100%;
+    /* Ajusta el ancho de la imagen según sea necesario */
+    margin-right: 10px;
+    /* Espacio entre la imagen y las informaciones */
+}
+
+.imagen img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
+
+}
+
+
+.product-details {
+    flex-grow: 1;
+    /* Permite que las informaciones ocupen todo el espacio restante */
+
+}
+
+.title-product {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.price-product {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 10px;
+    flex: content;
+    display: block;
+}
+
+.product-description {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.buy-button {
+    background-color: #fb1;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.buy-button:hover {
+    background-color: #111;
+}
+
+
+
+
+/* Estilos del footer */
+
+.footer-bg {
+    background-color: var(--color-primary);
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer img {
+    max-width: 150px;
+}
+
+.footer-contato h3,
+.footer-contato .font-2-l-b {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: var(--color-accent);
+}
+
+.footer-contato ul {
+    list-style: none;
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+.footer-contato li {
+    margin-bottom: 5px;
+    color: var(--color-link);
+}
+
+.footer-contato a {
+    color: var(--color-link);
+    text-decoration: none;
+
+}
+
+.footer-redes {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.footer-redes img {
+    max-width: 25px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.footer-copy {
+    margin-top: 30px;
+    font-size: 14px;
+    color: var(--color-accent);
+}
+
+
+/* Resto dos estilos aqui */
+
+.active {
+    background: #fb1;
+}
+
+.new-active {
+    background: #06bc37 !important;
+}
+
+
+/* Estilos para el tema claro */
+.theme-light {
+    background-color: white;
+    color: black;
+  }
+  
+  /* Estilos para el tema oscuro */
+  .dark-theme {
+    background-color: black;
+    color: white;
+  }
+  
+  .dark-theme .product .title-product {
+    color: white;
+  }
+  

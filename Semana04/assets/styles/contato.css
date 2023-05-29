@@ -1,0 +1,343 @@
+:root {
+  --color-background: #fff;
+  --color-text: #333;
+  --color-primary: #222;
+  --color-accent: #fff;
+  --color-secondary: #ccc;
+  --color-link: #fff;
+}
+
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Estilos del header */
+.header-bg {
+  background-color: var(--color-primary);
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo img {
+  width: 150px;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu ul li {
+  margin-left: 20px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: var(--color-link);
+}
+
+.menu :hover {
+  width: 100%;
+}
+
+/* Estilos del artículo de las tiendas */
+
+h2 {
+  padding: 50px 0;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.lojas {
+  padding: 50px 0;
+}
+
+.lojas h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.lojas-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.lojas-item img {
+  max-width: 100%;
+}
+
+.lojas-conteudo {
+  margin-left: 30px;
+}
+
+.lojas-dados p {
+  margin-bottom: 5px;
+}
+
+.lojas-tempo {
+  margin-top: 10px;
+}
+
+/* Estilos del footer */
+
+.footer-bg {
+  background-color: var(--color-primary);
+  padding: 50px 0;
+}
+
+.footer {
+  text-align: center;
+
+}
+
+.footer img {
+  max-width: 150px;
+}
+
+.footer-contato ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.footer-contato a {
+  color: var(#fff);
+  text-decoration: none;
+}
+
+.footer-redes img {
+  max-width: 25px;
+  margin-right: 10px;
+}
+
+/* Estilos adicionales */
+
+/* Estilos del formulario */
+
+.form label {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.form textarea {
+  resize: vertical;
+}
+
+.form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: #555;
+}
+
+/* Estilos del artículo de las tiendas */
+
+.lojas {
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.lojas-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.lojas-item img {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.lojas-conteudo {
+  margin-bottom: 20px;
+}
+
+.lojas-dados {
+  text-align: center;
+}
+
+.lojas-dados p {
+  margin-bottom: 10px;
+}
+
+.lojas-tempo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.lojas-tempo img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+
+
+/* Estilos adicionales */
+
+/* Estilos del formulario */
+
+.form label {
+  font-size: 20px;
+}
+
+.form input,
+.form textarea {
+  font-size: 16px;
+}
+
+.form button {
+  font-size: 18px;
+}
+
+/* Estilos del footer */
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.footer img {
+  max-width: 200px;
+}
+
+.footer-p {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: var(--color-accent);
+}
+
+.footer-contato h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: var(--color-accent);
+}
+
+.footer-contato ul {
+  margin-bottom: 15px;
+}
+
+.footer-contato li {
+  margin-bottom: 5px;
+}
+
+.footer-copy {
+  margin-top: 30px;
+  font-size: 14px;
+  color: var(--color-accent);
+}
+
+.footer-redes {
+  margin-top: 30px;
+}
+
+.footer-redes img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.footer img {
+  max-width: 200px;
+}
+
+.footer-p {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: var(--color-accent);
+}
+
+.footer-contato h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: var(--color-accent);
+}
+
+.footer-contato ul {
+  margin-bottom: 15px;
+}
+
+.footer-contato li {
+  margin-bottom: 5px;
+}
+
+.footer-copy {
+  margin-top: 30px;
+  font-size: 14px;
+  color: var(--color-accent);
+}
+
+.footer-redes {
+  margin-top: 30px;
+}
+
+.footer-redes img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
