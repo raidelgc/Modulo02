@@ -1,0 +1,43 @@
+.Header {
+    color: #222;
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    
+}
+
+.Menu {
+    display: flex;
+    margin: 0;
+    flex-direction: row;
+    width: 200px;
+    justify-content: space-between;
+ }
+
+ .Menu-icon {
+    width: 35px;
+    height: 35px;
+}
+
+.Menu-icon:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+
+.Menu li {
+    list-style-type: none; /*Elimina los puntos de la lista*/
+    font-size: 16px;
+    cursor: pointer; /*Establecer el mismo estilo que los elementos a*/
+}
+
+.Menu a {
+    text-decoration: none;
+    color: #222;
+    
+  }
+  
+
+.Menu a:hover {
+  text-decoration: underline;
+}
