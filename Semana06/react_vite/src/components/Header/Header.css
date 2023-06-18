@@ -1,0 +1,38 @@
+.menu-principal-wrapper {
+    padding: 5px;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-wrapper {
+    list-style: none;
+    display: flex;
+    margin-top: 15px;
+}
+
+.menu-wrapper li {
+    margin: 0 10px;
+}
+
+.menu-wrapper li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 42px 20px;
+    gap: 10px;
+    position: relative;
+    height: 80px;
+    background: #111111;
+    color: #fff;
+}
