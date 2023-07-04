@@ -1,0 +1,35 @@
+.footer-column {
+    text-align: center;
+  }
+  
+  .footer-column img {
+    width: 500px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .footerTitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .footerList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .footerList li {
+    margin-bottom: 5px;
+  }
+  
+  .footerList li:last-child {
+    margin-bottom: 0;
+  }
+  
+  p {
+    font-size: 14px;
+  }
+  

@@ -1,0 +1,112 @@
+.card-container {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 10px;
+  position: relative;
+  width: 1280px;
+  
+}
+
+.card-title {
+  width: 109px;
+  height: 28px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #333333;
+
+}
+
+.card-description {
+  width: 500px;
+  height: 57px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: justify;
+  color: #666666;
+}
+
+.card-features {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: justify;
+  color: #333333;
+}
+
+.card-feature {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+}
+
+.card-feature::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background: #E4A30B;
+  border-radius: 50%;
+}
+
+.card-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  width: 158px;
+  height: 51px;
+  background: #F2A50C;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  margin-left: 0px;
+}
+.card {
+  width: 549px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.produto {
+  position: relative;
+  width: 549px;
+  height: 288px;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.produto-price {
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  width: 83px;
+  height: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: #FFFFFF;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  border-radius: 4px;
+}

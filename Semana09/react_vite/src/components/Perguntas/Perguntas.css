@@ -1,0 +1,27 @@
+.perguntas {
+    margin-bottom: 20px;
+  }
+  
+  .perguntas-header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .perguntas-header h3 {
+    margin: 0;
+  }
+  
+  .perguntas-toggle {
+    margin-left: 10px;
+    font-weight: bold;
+  }
+  
+  .perguntas-toggle.open {
+    transform: rotate(45deg);
+  }
+  
+  .perguntas-descricao {
+    margin-top: 10px;
+  }
+  
