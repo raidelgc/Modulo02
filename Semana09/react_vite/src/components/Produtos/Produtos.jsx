@@ -1,15 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Produtos.css';
+import { ModalContext } from '../../context/ModalContext/ModalContext';
+import ModalComponent from '../ModalComponent/ModalComponent';
 
-const Produtos = ({ name, price, description, features, image, onOpenModal }) => {
-  const handleButtonClick = () => {
-    onOpenModal({
-      name,
-      price,
-      description,
-      features,
-      image,
+const Produtos = ({ name, price, description, features, image }) => {
+  const { show, setShow, setData } = useContext(ModalContext);
+
+  const handleShowModal = () => {
+    setData({
+      title: name,
+      description: description,
     });
+    setShow(true);
   };
 
   return (
@@ -29,7 +31,8 @@ const Produtos = ({ name, price, description, features, image, onOpenModal }) =>
               </span>
             ))}
           </div>
-          <button className="card-button" onClick={handleButtonClick}>
+          {show && <ModalComponent />}
+          <button className="card-button" onClick={handleShowModal}>
             Mais detalhes
           </button>
         </div>
@@ -40,4 +43,3 @@ const Produtos = ({ name, price, description, features, image, onOpenModal }) =>
 
 export default Produtos;
 
-console.log(Produtos)

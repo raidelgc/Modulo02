@@ -6,6 +6,8 @@ import ContactPage from './pages/ContactPage/ContactPage';
 import FAQPage from './pages/FAQPage/FAQPage';
 import ErroPage from './pages/ErroPage/ErroPage';
 import { BannerContext } from './context/BannerContext';
+import { ModalContext, ModalProvider } from './context/ModalContext/ModalContext';
+import ModalComponent from './components/ModalComponent/ModalComponent';
 
 function App() {
   const { updateBanner } = useContext(BannerContext);
@@ -17,12 +19,12 @@ function App() {
   return (
     <Router>
       <Header />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="contact" element={<ContactPage />} />
-        <Route path="faq" element={<FAQPage />} />
-        <Route path="*" element={<ErroPage />} />
-      </Routes>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="contact" element={<ContactPage />} />
+          <Route path="faq" element={<FAQPage />} />
+          <Route path="*" element={<ErroPage />} />
+        </Routes>
     </Router>
   );
 }
