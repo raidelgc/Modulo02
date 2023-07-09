@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './Buscas.css'
 
 const Buscas = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -13,10 +14,12 @@ const Buscas = () => {
   };
 
   return (
-    <div>
+    <>
+    <div className='inputBusca'>
       <input type="text" value={searchQuery} onChange={handleInputChange} placeholder="Digite sua busca" />
       <button onClick={handleSearch}>Buscar</button>
     </div>
+    </>
   );
 };
 

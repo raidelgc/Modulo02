@@ -1,21 +1,40 @@
-import React, { useContext } from 'react';
-import { ModalContext } from '../../context/ModalContext/ModalContext';
+import React, { useState } from 'react';
+import { Button, Modal } from 'antd';
+import Produtos from '../../components/Produtos/Produtos';
 
 const ModalComponent = () => {
-  const { show, data, setShow } = useContext(ModalContext);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const closeModal = () => {
-    setShow(false);
-    setData({ title: null, description: null });
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleOk = () => {
+    setIsModalOpen(false);
+  };
+
+  const handleCancel = () => {
+    setIsModalOpen(false);
   };
 
   return (
     <>
-      <h2>{data.title}</h2>
-      <p>{data.description}</p>
-      <button onClick={closeModal}>Cerrar</button>
+      <Button type="primary" onClick={showModal}>
+        Open Modal
+      </Button>
+      <Modal title="Basic Modal" visible={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+        <Produtos
+          name="Produto"
+          price="R$ 1299.68"
+          description="Mussum Ipsum, cacilds vidis litro abertis. Leite de capivaris, leite de mula manquis sem cabeça. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus."
+          features={['Caracteristica 1', 'Caracteristica 2', 'Caracteristica 3']}
+          image={bikiImage1}
+        />
+        <p>Some contents...</p>
+        <p>Some contents...</p>
+      </Modal>
     </>
-  )
+  );
 };
 
 export default ModalComponent;
